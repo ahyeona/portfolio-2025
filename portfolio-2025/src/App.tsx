@@ -114,6 +114,73 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Bounswap 탈중앙화 거래소 (협약 프로젝트)",
+    team: "5인",
+    description: "Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게 토큰 교환, 유동성 공급 기능과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소(DEX)",
+    role: "contract, deploy",
+    stack: ["Solidity", "React", "TypeScript", "AWS", "react-query"],
+    period: "2023.10.23 ~ 2023. 12. 05",
+    thumbnail: "/bounswap/bounswap.png",
+    github: "https://github.com/9oodam/BounswapContract",
+    images: [
+      {
+        src: "/bounswap/bounswap_architecture.png",
+        caption: "컨트랙트 아키텍처",
+      },
+      {
+        src: "/bounswap/bounswap.png",
+        caption: "swap 페이지 : 플랫폼 내 예치된 코인 및 토큰을 자유롭게 교환할 수 있는 swap 페이지",
+      },
+      {
+        src: "/bounswap/bounswap_tokens.png",
+        caption: "token dashboard 페이지",
+      },
+      {
+        src: "/bounswap/bounswap_tokenDetail.png",
+        caption: "token detail 페이지",
+      },
+      {
+        src: "/bounswap/bounswap_pools.png",
+        caption: "pool dashboard 페이지",
+      },
+      {
+        src: "/bounswap/bounswap_poolDetail.png",
+        caption: "pool detail 페이지 : add liquidity - 사용자가 원하는 토큰 2개를 페어로 플랫폼에 존재하는 풀에 원하는 양만큼 1:1로 예치하고 증서로 LP토큰을 부여받음, 해당 풀에서 스왑이 일어나면 유동성 공급자는 지분에 비례하여 수수료를 분배받음",
+      },
+      {
+        src: "/bounswap/bounswap_stake.png",
+        caption: "stake dashboard 페이지 : staking - 특정 LP토큰을 스테이킹 풀에 예치한 기간과 양에 따라 메인넷 코인(BNC)를 보상으로 부여",
+      },
+      {
+        src: "/bounswap/bounswap_governance.png",
+        caption: "governance 페이지 - governance : 커뮤니티의 방향성에 대한 제안과 투표로 의사를 표할 수 있음",
+      },
+      {
+        src: "/bounswap/bounswap_sidebar.png",
+        caption: "sidebar 페이지 : 사용자가 보유중인 코인, 토큰 목록과 유동성을 제공한 풀의 목록을 출력",
+      },
+      {
+        src: "/bounswap/bounswap_mobile.gif",
+        caption: "mobile 구현",
+      },
+    ],
+    projectDesc: [
+      {
+        title:
+          "작업내용",
+        desc: `contract : data, governance 컨트랙트 작성. data 컨트랙트는 프론트와 상호작용하는 컨트랙트 중 하나로, pair 기능과 관련된 데이터를 기록하는 컨트랙트이다. governance 컨트랙트는 거버넌스 기능을 담당하는 컨트랙트로, 의제 제출과 투표 기능을 담당하는 컨트랙트이다.
+front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 기록
+deploy : AWS S3 정적 배포`
+      },
+      {
+        title:
+          "담당 역할",
+        desc: `Data, Governance 컨트랙트 작성, 컨트랙트 데이터 프론트 출력, AWS S3 프론트 배포`
+      }
+    ]
+  },
+  {
+    id: 3,
     title: "Nobroker 부동산 매매 사이트",
     team: "4인",
     description: "중개사 없이 매물을 거래할 수 있는 사이트",
@@ -171,7 +238,7 @@ deploy : AWS EC2 배포`
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Internode 티켓 예매 사이트",
     team: "4인",
     description: "티켓 예매 사이트",
@@ -258,74 +325,7 @@ deploy : AWS EC2 배포`
         desc: `공연 예매 페이지, 마이페이지 작성`
       }
     ]
-  },
-  {
-    id: 4,
-    title: "Bounswap 탈중앙화 거래소 (협약 프로젝트)",
-    team: "5인",
-    description: "Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게 토큰 교환, 유동성 공급 기능과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소(DEX)",
-    role: "contract, deploy",
-    stack: ["React", "TypeScript", "Solidity", "AWS", "react-query"],
-    period: "2023.10.23 ~ 2023. 12. 05",
-    thumbnail: "/bounswap/bounswap.png",
-    github: "https://github.com/9oodam/BounswapContract",
-    images: [
-      {
-        src: "/bounswap/bounswap_architecture.png",
-        caption: "컨트랙트 아키텍처",
-      },
-      {
-        src: "/bounswap/bounswap.png",
-        caption: "swap 페이지 : 플랫폼 내 예치된 코인 및 토큰을 자유롭게 교환할 수 있는 swap 페이지",
-      },
-      {
-        src: "/bounswap/bounswap_tokens.png",
-        caption: "token dashboard 페이지",
-      },
-      {
-        src: "/bounswap/bounswap_tokenDetail.png",
-        caption: "token detail 페이지",
-      },
-      {
-        src: "/bounswap/bounswap_pools.png",
-        caption: "pool dashboard 페이지",
-      },
-      {
-        src: "/bounswap/bounswap_poolDetail.png",
-        caption: "pool detail 페이지 : add liquidity - 사용자가 원하는 토큰 2개를 페어로 플랫폼에 존재하는 풀에 원하는 양만큼 1:1로 예치하고 증서로 LP토큰을 부여받음, 해당 풀에서 스왑이 일어나면 유동성 공급자는 지분에 비례하여 수수료를 분배받음",
-      },
-      {
-        src: "/bounswap/bounswap_stake.png",
-        caption: "stake dashboard 페이지 : staking - 특정 LP토큰을 스테이킹 풀에 예치한 기간과 양에 따라 메인넷 코인(BNC)를 보상으로 부여",
-      },
-      {
-        src: "/bounswap/bounswap_governance.png",
-        caption: "governance 페이지 - governance : 커뮤니티의 방향성에 대한 제안과 투표로 의사를 표할 수 있음",
-      },
-      {
-        src: "/bounswap/bounswap_sidebar.png",
-        caption: "sidebar 페이지 : 사용자가 보유중인 코인, 토큰 목록과 유동성을 제공한 풀의 목록을 출력",
-      },
-      {
-        src: "/bounswap/bounswap_mobile.gif",
-        caption: "mobile 구현",
-      },
-    ],
-    projectDesc: [
-      {
-        title:
-          "작업내용",
-        desc: `contract : data, governance 컨트랙트 작성. data 컨트랙트는 프론트와 상호작용하는 컨트랙트 중 하나로, pair 기능과 관련된 데이터를 기록하는 컨트랙트이다. governance 컨트랙트는 거버넌스 기능을 담당하는 컨트랙트로, 의제 제출과 투표 기능을 담당하는 컨트랙트이다.
-front : react query를 활용하여 컨트랙트에게 응답받은 데이터를 기록
-deploy : AWS S3 정적 배포`
-      },
-      {
-        title:
-          "담당 역할",
-        desc: `Data, Governance 컨트랙트 작성, 컨트랙트 데이터 프론트 출력, AWS S3 프론트 배포`
-      }
-    ]
-  },
+  }
 ];
 
 export const App = () => {
