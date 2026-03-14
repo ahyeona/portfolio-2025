@@ -31,6 +31,60 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "stocklens",
+    // deployUrl: "https://stocklens-frontend.vercel.app/",
+    team: "1인",
+    description: "AI 기반 주식 리서치 자동화 서비스",
+    role: "frontend, backend, deploy",
+    stack: ["Next", "TypeScript", "n8n", "Supabase", "Render"],
+    period: "2025.3",
+    thumbnail: "/stocklens/main_gif.gif",
+    github: "https://github.com/ahyeona/stocklens-frontend",
+    images: [
+      {
+        src: "/stocklens/main_gif.gif",
+        caption: "실행화면",
+      },
+      {
+        src: "/stocklens/n8n.png",
+        caption: "n8n 워크플로우",
+      },
+      {
+        src: "/stocklens/main.png",
+        caption: "",
+      },
+      {
+        src: "/stocklens/list.png",
+        caption: "종목 자동완성 검색",
+      },
+      {
+        src: "/stocklens/report.png",
+        caption: "",
+      },
+      {
+        src: "/stocklens/report_2.png",
+        caption: "AI 리서치 리포트",
+      },
+      {
+        src: "/stocklens/history.png",
+        caption: "리포트 히스토리 목록",
+      },
+      {
+        src: "/stocklens/history_report.png",
+        caption: "리포트 히스토리",
+      },
+      {
+        src: "/stocklens/watchlist.png",
+        caption: "관심종목 관리",
+      },
+      {
+        src: "/stocklens/pdf.png",
+        caption: "pdf 내보내기",
+      }
+    ],
+  },
+  {
+    id: 2,
     title: "MyPick",
     deployUrl: "https://my-pick.vercel.app",
     team: "1인",
@@ -113,7 +167,7 @@ const projects: Project[] = [
     video: "/mypick/video.mp4"
   },
   {
-    id: 2,
+    id: 3,
     title: "Bounswap 탈중앙화 거래소 (협약 프로젝트)",
     team: "5인",
     description: "Uniswap의 분산형 자동화 마켓 메이커(AMM)를 기반으로 사용자에게 토큰 교환, 유동성 공급 기능과 다양한 수익창출의 기회를 제공하는 탈중앙화 거래소(DEX)",
@@ -180,7 +234,7 @@ deploy : AWS S3 정적 배포`
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Nobroker 부동산 매매 사이트",
     team: "4인",
     description: "중개사 없이 매물을 거래할 수 있는 사이트",
@@ -234,95 +288,6 @@ deploy : AWS EC2 배포`
         title:
           "담당 역할",
         desc: `팀장, 매물 상세 페이지, 매물 투표 페이지, AWS EC2 배포`
-      }
-    ]
-  },
-  {
-    id: 4,
-    title: "Internode 티켓 예매 사이트",
-    team: "4인",
-    description: "티켓 예매 사이트",
-    role: "Frontend, Backend",
-    stack: ["Node.js", "express", "javascript", "Mysql"],
-    period: "2023. 06. 02 ~ 2023. 06. 26",
-    thumbnail: "/internode/internode.png",
-    github: "https://github.com/zerohoney97/interNode",
-    images: [
-      {
-        src: "/internode/internode_erd.png",
-        caption: "ERD",
-      },
-      {
-        src: "/internode/internode.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_list2.png",
-        caption: "메인페이지 : 공연 목록 - 예매 가능한 공연 목록 확인 가능",
-      },
-      {
-        src: "/internode/internode_detail1.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_detail2.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_detail3.png",
-        caption: "상세페이지",
-      },
-      {
-        src: "/internode/internode_ticketing.png",
-        caption: "예매 페이지 : socket.io를 사용하여 공연 예매 구현",
-      },
-      {
-        src: "/internode/internode_mypage.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_addReview.png",
-        caption: "마이페이지 - 리뷰 : 공연에 대한 리뷰 작성 가능, 마이페이지: 개인 정보 수정 및 예매 내역 확인 가능",
-      },
-      {
-        src: "/internode/internode_freeboard.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_insertFreeboard.png",
-        caption: "자유게시판 : 자유로운 게시글 작성",
-      },
-      {
-        src: "/internode/internode_chat.png",
-        caption: "문의하기",
-      },
-      {
-        src: "/internode/internode_admin_user.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_admin_chat.png",
-        caption: "",
-      },
-      {
-        src: "/internode/internode_admin_chat_detail.png",
-        caption: "관리자 : 유저 관리 및 공연 등록. socket.io를 사용하여 채팅 기능 구현",
-      },
-      {
-        src: "/internode/internode_signup.png",
-        caption: "회원가입 페이지",
-      },
-    ],
-    projectDesc: [
-      {
-        title:
-          "작업내용",
-        desc: `공연 예매 기능 구현 : socket.io 사용, 마이 페이지 : 예매 내역/공연 후기 목록 출력, 작성, 수정, 삭제 기능`
-      },
-      {
-        title:
-          "담당 역할",
-        desc: `공연 예매 페이지, 마이페이지 작성`
       }
     ]
   }
